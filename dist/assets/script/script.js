@@ -21,11 +21,11 @@ menuToggleButton.addEventListener("click", function () {
 closeMenuButton.addEventListener("click", hideMenu);
 
 // Hide the menu when clicking outside of it
-bodyOverlay.addEventListener("click", function (event) {
-  if (event.target === bodyOverlay) {
-    hideMenu();
-  }
-});
+// bodyOverlay.addEventListener("click", function (event) {
+//   if (event.target === bodyOverlay) {
+//     hideMenu();
+//   }
+// });
 
 // Hide the menu when clicking on any menu item
 menuItems.forEach(function (menuItem) {
