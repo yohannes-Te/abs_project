@@ -1,39 +1,27 @@
-//Header Off-Canvas-Menu Start
+//Header Off-Canvas-Menu
 const menuToggleButton = document.getElementById("menuToggleButton");
 const closeMenuButton = document.getElementById("closeMenuButton");
 const offCanvasMenu = document.getElementById("offCanvasMenu");
 const bodyOverlay = document.getElementById("body-overlay");
 const menuItems = document.querySelectorAll("#offCanvasMenu ul li");
 
-// Function to hide the menu
 function hideMenu() {
   offCanvasMenu.classList.remove("show");
   bodyOverlay.classList.remove("active");
 }
 
-// Show the menu when menuToggleButton is clicked
 menuToggleButton.addEventListener("click", function () {
   offCanvasMenu.classList.add("show");
   bodyOverlay.classList.add("active");
 });
 
-// Hide the menu when closeMenuButton is clicked
 closeMenuButton.addEventListener("click", hideMenu);
 
-// Hide the menu when clicking outside of it
-// bodyOverlay.addEventListener("click", function (event) {
-//   if (event.target === bodyOverlay) {
-//     hideMenu();
-//   }
-// });
-
-// Hide the menu when clicking on any menu item
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", hideMenu);
 });
-// Header Off-Canvas-Menu-end
 
-// Hero Section Carousel swiper start
+// Hero Section Carousel swiper
 var swiper1 = new Swiper(".mySwiper1", {
   spaceBetween: 0.5,
   // centeredSlides: true,
@@ -54,6 +42,7 @@ var swiper1 = new Swiper(".mySwiper1", {
 });
 // hero section Carousel Swiper End
 
+// feature secction Swiper start
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   speed: 1000,
@@ -83,17 +72,29 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 function setMiddleSlideBackground(swiper) {
-  // Ensure operation only when slidesPerView is 3
   if (swiper.params.slidesPerView === 3) {
-    // Remove background color from all slides
     swiper.slides.forEach((slide) => {
-      slide.style.backgroundColor = ""; // Reset background color
+      slide.style.backgroundColor = "";
     });
 
-    // Calculate the index for the middle slide
     let middleIndex = (swiper.activeIndex + 1) % swiper.slides.length;
 
-    // Set the background color of the middle slide
-    swiper.slides[middleIndex].style.backgroundColor = "#f8f0f0"; // Customize color
+    swiper.slides[middleIndex].style.backgroundColor = "#f8f0f0";
   }
+}
+
+// Back to top
+const scrollTop = document.getElementById("scroll__top");
+
+if (scrollTop) {
+  scrollTop.addEventListener("click", function () {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  });
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+      scrollTop.classList.add("active");
+    } else {
+      scrollTop.classList.remove("active");
+    }
+  });
 }

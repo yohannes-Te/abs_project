@@ -65,4 +65,13 @@
   .off-canvas-menu.show {
     transform: translateX(0);
   }
+
+  .underline-style {
+    @apply before:absolute before:content-[''] before:bg-[#ff5e14] before:w-[60px] before:h-[4px] before:rounded-[5px] before:left-0 before:bottom-0 after:absolute after:content-[''] after:bg-[#ff5e14] after:rounded-[5px] after:w-[15px] after:h-[4px] after:left-[65px] after:bottom-0;
+  }
+
+  /* Back to top css */
+  #scroll__top.active {
+    @apply visible opacity-100 translate-y-0;
+  }
 }
