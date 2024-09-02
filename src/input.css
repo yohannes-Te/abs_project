@@ -66,6 +66,29 @@
     transform: translateX(0);
   }
 
+  .header__sticky.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+
+  .input-control {
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #eaf2f5;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    padding: 6px 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .input-control:focus {
+    border-color: #ff5e14;
+  }
+
   .underline-style {
     @apply before:absolute before:content-[''] before:bg-[#ff5e14] before:w-[60px] before:h-[4px] before:rounded-[5px] before:left-0 before:bottom-0 after:absolute after:content-[''] after:bg-[#ff5e14] after:rounded-[5px] after:w-[15px] after:h-[4px] after:left-[65px] after:bottom-0;
   }

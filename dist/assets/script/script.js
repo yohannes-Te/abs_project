@@ -21,6 +21,33 @@ menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", hideMenu);
 });
 
+// Function to calculate the top offset of an element
+const getTopOffset = (element) => {
+  let offsetTop = 0;
+  while (element) {
+    offsetTop += element.offsetTop;
+    element = element.offsetParent;
+  }
+
+  return offsetTop;
+};
+
+// Header sticky activation
+const headerStickyWrapper = document.querySelector("header");
+const headerStickyTarget = document.querySelector(".header__sticky");
+
+if (headerStickyTarget) {
+  window.addEventListener("scroll", function () {
+    const stickyTargetElementOffset = getTopOffset(headerStickyWrapper);
+
+    if (window.scrollY > stickyTargetElementOffset) {
+      headerStickyTarget.classList.add("sticky");
+    } else {
+      headerStickyTarget.classList.remove("sticky");
+    }
+  });
+}
+
 // Hero Section Carousel swiper
 var swiper1 = new Swiper(".mySwiper1", {
   spaceBetween: 0.5,
