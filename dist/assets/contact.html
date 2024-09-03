@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -319,75 +319,76 @@
       <!-- Page Title end -->
 
       <!-- contact section -->
-      <section class="contact-pg-section section-padding">
+      <section>
         <div class="py-20 md:pt-[90px] md:mx-[66px] px-4">
-          <h2
-            class="text-center font-barlowCondensed text-[#151222] text-3xl md:text-4xl lg:text-5xl font-medium mt-2 pb-5 mb-5"
-          >
-            <span>Contact With Us</span>
-            <span class="block font-light">if you have any query</span>
-          </h2>
-
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <form method="post" action="" id="contact-form-main">
-              <fieldset class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <label for="name" class="sr-only">Your Name</label>
+            <div>
+              <div
+                class="text-left font-barlowCondensed text-[#151222] text-3xl md:text-4xl lg:text-5xl font-medium mt-2 pb-5"
+              >
+                <p>Contact With Us</p>
+                <h2 class="font-light">Wif you have any query.</h2>
+              </div>
+              <form method="post" action="" id="contact-form-main">
+                <fieldset class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <label for="name" class="sr-only">Your Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                    class="input-control"
+                  />
+                  <label for="email" class="sr-only">Your Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                    class="input-control"
+                  />
+                  <label for="phone" class="sr-only">Phone Number</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="number"
+                    placeholder="Phone Number"
+                    min="0"
+                    required
+                    class="input-control"
+                  />
+                  <label for="subject" class="sr-only">Subject</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Subject"
+                    required
+                    class="input-control"
+                  />
+                </fieldset>
+                <fieldset class="py-6">
+                  <label for="discription" class="sr-only"
+                    >Write a message here...</label
+                  >
+                  <textarea
+                    id="discription"
+                    name="discription"
+                    rows="3"
+                    cols="30"
+                    placeholder="Write a message here..."
+                    class="w-full border-2 border-[#eaf2f5] py-[6px] px-4 focus:border-primary1 outline-none"
+                  ></textarea>
+                </fieldset>
                 <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your Name"
-                  required
-                  class="input-control"
+                  type="submit"
+                  value="Send a message"
+                  class="font-openSans font-medium text-white bg-primary1 px-6 py-3 rounded-3xl inline-flex items-center hover:text-[#131222] border hover:border-primary1 hover:bg-[#f3f3f3] transition duration-300 uppercase"
                 />
-                <label for="email" class="sr-only">Your Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Your Email"
-                  required
-                  class="input-control"
-                />
-                <label for="phone" class="sr-only">Phone Number</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="number"
-                  placeholder="Phone Number"
-                  min="0"
-                  required
-                  class="input-control"
-                />
-                <label for="subject" class="sr-only">Subject</label>
-                <input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  placeholder="Subject"
-                  required
-                  class="input-control"
-                />
-              </fieldset>
-              <fieldset class="py-6">
-                <label for="discription" class="sr-only"
-                  >Write a message here...</label
-                >
-                <textarea
-                  id="discription"
-                  name="discription"
-                  rows="3"
-                  cols="30"
-                  placeholder="Write a message here..."
-                  class="w-full border-2 border-[#eaf2f5] py-[6px] px-4 focus:border-primary1 outline-none"
-                ></textarea>
-              </fieldset>
-              <input
-                type="submit"
-                value="Send a message"
-                class="font-openSans font-medium text-white bg-primary1 px-6 py-3 rounded-3xl inline-flex items-center hover:text-[#131222] border hover:border-primary1 hover:bg-[#f3f3f3] transition duration-300 uppercase"
-              />
-            </form>
+              </form>
+            </div>
 
             <div class="bg-primary1/95 py-12 px-10">
               <h3
