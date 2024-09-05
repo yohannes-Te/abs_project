@@ -110,6 +110,33 @@ function setMiddleSlideBackground(swiper) {
   }
 }
 
+// Initialize Isotope
+var elem = document.querySelector(".gallery");
+var iso = new Isotope(elem, {
+  itemSelector: ".item",
+  layoutMode: "fitRows",
+});
+
+// Filter items on button click
+var filterButtons = document.querySelectorAll(".filters-button-group .button");
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    var filterValue = button.getAttribute("data-filter");
+    iso.arrange({ filter: filterValue });
+
+    // Toggle active class
+    filterButtons.forEach((btn) => btn.classList.remove("is-checked"));
+    button.classList.add("is-checked");
+  });
+});
+
+// glightbox initialization
+const lightbox = GLightbox({
+  selector: ".glightbox",
+  touchNavigation: true,
+  loop: true,
+});
+
 // Back to top
 const scrollTop = document.getElementById("scroll__top");
 

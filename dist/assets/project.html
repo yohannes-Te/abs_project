@@ -14,519 +14,687 @@
     <title>ABS Garment plc</title>
     <!-- swiper css -->
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- glightbox css -->
+    <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
 
-    <!-- custom stylesheet -->
+    <!-- tailwindcss -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <!-- swiper js -->
     <script src="../assets/script/swiper-bundle.min.js" defer></script>
+
+    <!-- isotope js  -->
+    <script src="../assets/script/isotope.pkgd.min.js" defer></script>
+
+    <!-- glightbox js -->
+    <script src="../assets/script/glightbox.min.js" defer></script>
+
     <!-- custom script -->
     <script src="../assets/script/script.js" defer></script>
   </head>
   <body>
-    <!-- header area start -->
-    <header class="relative top-0 left-0 w-full">
-      <!-- Address Section Start -->
-      <div
-        class="hidden w-full mx-auto bg-[#020d26] font-openSans text-[#e4e4e4] h-10 px-4 md:flex md:items-center justify-between"
-      >
-        <ul
-          class="flex items-center justify-center text-xs lg:text-sm space-x-2 ml-[66px]"
+    <div id="body-overlay" class="overlay">
+      <!-- header area start -->
+      <header class="relative top-0 left-0 w-full">
+        <!-- Address Section Start -->
+        <div
+          class="hidden w-full mx-auto bg-[#020d26] font-openSans text-[#e4e4e4] h-10 px-4 md:flex md:items-center justify-between"
         >
-          <li class="space-x-1 flex items-center separator">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-              width="20"
-              height="24"
-              aria-label="Phone Icon"
-              role="img"
-              aria-hidden="true"
-            >
-              <path
-                d="M21,1H9C7.895,1,7,1.895,7,3v24c0,1.105,0.895,2,2,2h12c1.105,0,2-0.895,2-2V3C23,1.895,22.105,1,21,1z M15,27 c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C16,26.552,15.552,27,15,27z M21,24H9V4h12V24z"
-                fill="#FF5E14"
-              />
-            </svg>
-            <span>+251 911 111 111</span>
-          </li>
-          <li class="space-x-1 flex items-center separator">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="20"
-              height="24"
-              aria-label="Email Icon"
-              role="img"
-              aria-hidden="true"
-            >
-              <path
-                d="M4 4C2.895 4 2 4.895 2 6L2 18C2 19.105 2.895 20 4 20L20 20C21.105 20 22 19.105 22 18L22 6C22 4.895 21.105 4 20 4L4 4 z M 4 6L20 6L20 7.0019531L12 12L4 7.0019531L4 6 z M 4 9.0019531L12 14L20 9.0019531L20 18L4 18L4 9.0019531 z"
-                fill="#FF5E14"
-              />
-            </svg>
-            <span>example@demo.com</span>
-          </li>
-          <li class="space-x-1 flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              width="20"
-              height="24"
-              aria-label="Working Hours Icon"
-              role="img"
-              aria-hidden="true"
-            >
-              <path
-                d="M7.5 1C3.917969 1 1 3.917969 1 7.5C1 11.082031 3.917969 14 7.5 14C11.082031 14 14 11.082031 14 7.5C14 3.917969 11.082031 1 7.5 1 Z M 7.5 2C10.542969 2 13 4.457031 13 7.5C13 10.542969 10.542969 13 7.5 13C4.457031 13 2 10.542969 2 7.5C2 4.457031 4.457031 2 7.5 2 Z M 7 3L7 8L10 8L10 7L8 7L8 3Z"
-                fill="#FF5E14"
-              />
-            </svg>
-            <span>Mon - Sat 8:30 am to 5:30 pm</span>
-          </li>
-        </ul>
-
-        <ul class="flex items-center mr-[66px]">
-          <li
-            class="flex items-center justify-center separator separator-before"
+          <ul
+            class="flex items-center justify-center text-xs lg:text-sm space-x-2 ml-[66px]"
           >
-            <a href="#" class="group" aria-label="Facebook Icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="20"
-                height="24"
-                class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
-              >
-                <path
-                  d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="flex items-center justify-center separator">
-            <a href="#" class="group" aria-label="LinkedIn Icon">
+            <li class="space-x-1 flex items-center separator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 30 30"
                 width="20"
                 height="24"
-                class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                aria-label="Phone Icon"
+                role="img"
+                aria-hidden="true"
               >
                 <path
-                  d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
+                  d="M21,1H9C7.895,1,7,1.895,7,3v24c0,1.105,0.895,2,2,2h12c1.105,0,2-0.895,2-2V3C23,1.895,22.105,1,21,1z M15,27 c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C16,26.552,15.552,27,15,27z M21,24H9V4h12V24z"
+                  fill="#FF5E14"
                 />
               </svg>
-            </a>
-          </li>
-          <li class="flex items-center justify-center separator">
-            <a href="#" class="group" aria-label="TikTok Icon">
+              <span>+251 911 111 111</span>
+            </li>
+            <li class="space-x-1 flex items-center separator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 48 48"
+                viewBox="0 0 24 24"
                 width="20"
                 height="24"
-                class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                aria-label="Email Icon"
+                role="img"
+                aria-hidden="true"
               >
                 <path
-                  d="M11.5 6C8.4802259 6 6 8.4802259 6 11.5L6 36.5C6 39.519774 8.4802259 42 11.5 42L36.5 42C39.519774 42 42 39.519774 42 36.5L42 11.5C42 8.4802259 39.519774 6 36.5 6L11.5 6 z M 11.5 9L36.5 9C37.898226 9 39 10.101774 39 11.5L39 36.5C39 37.898226 37.898226 39 36.5 39L11.5 39C10.101774 39 9 37.898226 9 36.5L9 11.5C9 10.101774 10.101774 9 11.5 9 z M 26.435547 13.023438 A 1.50015 1.50015 0 0 0 25 14.5L25 28C25 30.227598 23.227598 32 21 32C18.772402 32 17 30.227598 17 28C17 25.772402 18.772402 24 21 24 A 1.50015 1.50015 0 1 0 21 21C17.151598 21 14 24.151598 14 28C14 31.848402 17.151598 35 21 35C24.848402 35 28 31.848402 28 28L28 19.560547C29.122742 20.063907 30.324544 20.328704 31.5 20.341797A1.50015 1.50015 0 1 0 31.5 17.341797C30.584536 17.328486 29.669502 17.100019 28.865234 16.664062C27.645582 15.994031 26.778231 14.875977 26.435547 13.023438 z"
+                  d="M4 4C2.895 4 2 4.895 2 6L2 18C2 19.105 2.895 20 4 20L20 20C21.105 20 22 19.105 22 18L22 6C22 4.895 21.105 4 20 4L4 4 z M 4 6L20 6L20 7.0019531L12 12L4 7.0019531L4 6 z M 4 9.0019531L12 14L20 9.0019531L20 18L4 18L4 9.0019531 z"
+                  fill="#FF5E14"
                 />
               </svg>
-            </a>
-          </li>
-          <li class="flex items-center justify-center separator after:mr-0">
-            <a href="#" class="group" aria-label="YOUTUBE Icon">
+              <span>example@demo.com</span>
+            </li>
+            <li class="space-x-1 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
                 width="20"
                 height="24"
-                class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
-              >
-                <path
-                  d="M2.488281 3.011719C1.664063 3.011719 0.988281 3.6875 0.988281 4.511719L0.988281 11.511719C0.988281 12.335938 1.664063 13.011719 2.488281 13.011719L13.488281 13.011719C14.308594 13.011719 14.988281 12.335938 14.988281 11.511719L14.988281 4.511719C14.988281 3.6875 14.3125 3.011719 13.488281 3.011719 Z M 2.488281 4.011719L13.488281 4.011719C13.769531 4.011719 13.988281 4.230469 13.988281 4.511719L13.988281 11.511719C13.988281 11.792969 13.769531 12.011719 13.488281 12.011719L2.488281 12.011719C2.207031 12.011719 1.988281 11.792969 1.988281 11.511719L1.988281 4.511719C1.988281 4.230469 2.207031 4.011719 2.488281 4.011719 Z M 6 4.992188L6 11.011719L11 8 Z M 7 6.757813L9.0625 8L7 9.242188Z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Address Section End -->
-
-      <!-- Nav Section Start -->
-      <div class="header__sticky">
-        <div
-          class="w-full mx-auto bg-white font-barlowCondensed text-[#151222] font-medium h-16 text-sm md:text-base lg:text-lg tracking-wider px-4 flex items-center justify-between shadow-md z-50"
-        >
-          <div class="flex items-center space-x-2 md:ml-[66px]">
-            <a href="#" class="flex items-center space-x-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-                width="48"
-                height="48"
+                aria-label="Working Hours Icon"
+                role="img"
                 aria-hidden="true"
               >
                 <path
-                  d="M50 14C30.129581 14 14 30.129595 14 50C14 69.870405 30.129581 86 50 86C69.870419 86 86 69.870405 86 50C86 30.129595 69.870419 14 50 14 z M 50 16C68.78954 16 84 31.210473 84 50C84 68.789527 68.78954 84 50 84C31.21046 84 16 68.789527 16 50C16 31.210473 31.21046 16 50 16 z M 50 19C32.884791 19 19 32.884791 19 50C19 67.115209 32.884791 81 50 81C67.115209 81 81 67.115209 81 50C81 40.904382 77.079076 32.716819 70.835938 27.046875 A 0.50005 0.50005 0 1 0 70.164062 27.787109C76.206924 33.275165 80 41.191618 80 50C80 66.574791 66.574791 80 50 80C33.425209 80 20 66.574791 20 50C20 33.425209 33.425209 20 50 20C53.630741 20 57.108062 20.645941 60.328125 21.826172 A 0.50018397 0.50018397 0 1 0 60.671875 20.886719C57.343938 19.66695 53.749259 19 50 19 z M 63.480469 22.140625 A 0.50005 0.50005 0 0 0 63.277344 23.091797C63.947092 23.423229 64.604492 23.779343 65.246094 24.158203 A 0.50005 0.50005 0 1 0 65.753906 23.296875C65.091508 22.905735 64.414908 22.53788 63.722656 22.195312 A 0.50005 0.50005 0 0 0 63.480469 22.140625 z M 67.507812 24.511719 A 0.50005 0.50005 0 0 0 67.457031 24.513672 A 0.50005 0.50005 0 0 0 67.212891 25.425781C67.545583 25.65906 67.873213 25.899999 68.195312 26.146484 A 0.50080937 0.50080937 0 1 0 68.804688 25.351562C68.470787 25.096048 68.130417 24.848143 67.787109 24.607422 A 0.50005 0.50005 0 0 0 67.507812 24.511719 z M 45.5 29 A 0.50005 0.50005 0 0 0 45.412109 29.007812 A 0.50005 0.50005 0 0 0 45.410156 29.007812 A 0.50005 0.50005 0 0 0 45.400391 29.009766 A 0.50005 0.50005 0 0 0 45.363281 29.019531 A 0.50005 0.50005 0 0 0 45.341797 29.025391L42.417969 30L42.164062 30C39.41462 30 36.886215 31.506731 35.574219 33.921875L28.060547 47.761719 A 0.50005 0.50005 0 0 0 28.234375 48.423828L32.234375 50.923828 A 0.50005 0.50005 0 0 0 32.910156 50.787109L39 42.087891L39 70.5 A 0.50005 0.50005 0 0 0 39.5 71L49.919922 71 A 0.50005 0.50005 0 0 0 50.082031 71L60.5 71 A 0.50005 0.50005 0 0 0 61 70.5L61 42.087891L67.089844 50.787109 A 0.50005 0.50005 0 0 0 67.765625 50.923828L71.765625 48.423828 A 0.50005 0.50005 0 0 0 71.939453 47.761719L64.425781 33.921875C63.113788 31.505665 60.585251 30 57.835938 30L57.582031 30L54.658203 29.025391 A 0.50005 0.50005 0 0 0 54.511719 29 A 0.50005 0.50005 0 0 0 54.5 29L45.5 29 z M 46.210938 30L53.789062 30L50 40.525391L46.210938 30 z M 45.195312 30.128906L48.916016 40.46875L45 37.263672L45 34.5 A 0.50005 0.50005 0 0 0 44.5 34L43 34L43 30.861328L45.195312 30.128906 z M 54.804688 30.128906L57 30.861328L57 34L55.5 34 A 0.50005 0.50005 0 0 0 55 34.5L55 37.263672L51.083984 40.46875L54.804688 30.128906 z M 42 31.011719L42 34.5 A 0.50005 0.50005 0 0 0 42.5 35L44 35L44 37.5 A 0.50005 0.50005 0 0 0 44.183594 37.886719L49.5 42.236328L49.5 59.5 A 0.50005 0.50005 0 1 0 50.5 59.5L50.5 42.236328L55.816406 37.886719 A 0.50005 0.50005 0 0 0 56 37.5L56 35L57.5 35 A 0.50005 0.50005 0 0 0 58 34.5L58 31.011719C60.319912 31.070577 62.43531 32.351342 63.546875 34.398438L70.835938 47.826172L67.636719 49.824219L60.910156 40.212891 A 0.50005 0.50005 0 0 0 60 40.5L60 70L50.5 70L50.5 67.5 A 0.50005 0.50005 0 0 0 49.992188 66.992188 A 0.50005 0.50005 0 0 0 49.5 67.5L49.5 70L40 70L40 40.5 A 0.50005 0.50005 0 0 0 39.089844 40.212891L32.363281 49.824219L29.164062 47.826172L36.453125 34.398438C37.564688 32.352255 39.680203 31.070618 42 31.011719 z M 49.992188 61.992188 A 0.50005 0.50005 0 0 0 49.5 62.5L49.5 64.5 A 0.50005 0.50005 0 1 0 50.5 64.5L50.5 62.5 A 0.50005 0.50005 0 0 0 49.992188 61.992188 z"
+                  d="M7.5 1C3.917969 1 1 3.917969 1 7.5C1 11.082031 3.917969 14 7.5 14C11.082031 14 14 11.082031 14 7.5C14 3.917969 11.082031 1 7.5 1 Z M 7.5 2C10.542969 2 13 4.457031 13 7.5C13 10.542969 10.542969 13 7.5 13C4.457031 13 2 10.542969 2 7.5C2 4.457031 4.457031 2 7.5 2 Z M 7 3L7 8L10 8L10 7L8 7L8 3Z"
                   fill="#FF5E14"
                 />
               </svg>
-              <span>ABS Garment</span>
-            </a>
-          </div>
+              <span>Mon - Sat 8:30 am to 5:30 pm</span>
+            </li>
+          </ul>
 
-          <nav role="navigation">
-            <ul
-              class="hidden md:flex md:items-center md:justify-center space-x-6 mr-2 md:mr-[66px]"
+          <ul class="flex items-center mr-[66px]">
+            <li
+              class="flex items-center justify-center separator separator-before"
             >
-              <li class="hover:text-primary1 transition duration-300">
-                <a href="../../index.html">HOME</a>
-              </li>
-              <li class="hover:text-primary1 transition duration-300">
-                <a href="about.html">ABOUT US</a>
-              </li>
-              <li class="hover:text-primary1 transition duration-300">
-                <a href="service.html">SERVICES</a>
-              </li>
-              <li class="hover:text-primary1 transition duration-300">
-                <a href="project.html">PROJECTS</a>
-              </li>
-              <li class="hover:text-primary1 transition duration-300">
-                <a href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
+              <a href="#" class="group" aria-label="Facebook Icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="24"
+                  class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                >
+                  <path
+                    d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center separator">
+              <a href="#" class="group" aria-label="LinkedIn Icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                  width="20"
+                  height="24"
+                  class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                >
+                  <path
+                    d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center separator">
+              <a href="#" class="group" aria-label="TikTok Icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="20"
+                  height="24"
+                  class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                >
+                  <path
+                    d="M11.5 6C8.4802259 6 6 8.4802259 6 11.5L6 36.5C6 39.519774 8.4802259 42 11.5 42L36.5 42C39.519774 42 42 39.519774 42 36.5L42 11.5C42 8.4802259 39.519774 6 36.5 6L11.5 6 z M 11.5 9L36.5 9C37.898226 9 39 10.101774 39 11.5L39 36.5C39 37.898226 37.898226 39 36.5 39L11.5 39C10.101774 39 9 37.898226 9 36.5L9 11.5C9 10.101774 10.101774 9 11.5 9 z M 26.435547 13.023438 A 1.50015 1.50015 0 0 0 25 14.5L25 28C25 30.227598 23.227598 32 21 32C18.772402 32 17 30.227598 17 28C17 25.772402 18.772402 24 21 24 A 1.50015 1.50015 0 1 0 21 21C17.151598 21 14 24.151598 14 28C14 31.848402 17.151598 35 21 35C24.848402 35 28 31.848402 28 28L28 19.560547C29.122742 20.063907 30.324544 20.328704 31.5 20.341797A1.50015 1.50015 0 1 0 31.5 17.341797C30.584536 17.328486 29.669502 17.100019 28.865234 16.664062C27.645582 15.994031 26.778231 14.875977 26.435547 13.023438 z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center separator after:mr-0">
+              <a href="#" class="group" aria-label="YOUTUBE Icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="20"
+                  height="24"
+                  class="fill-white group-hover:fill-[#FF5E14] transition duration-300"
+                >
+                  <path
+                    d="M2.488281 3.011719C1.664063 3.011719 0.988281 3.6875 0.988281 4.511719L0.988281 11.511719C0.988281 12.335938 1.664063 13.011719 2.488281 13.011719L13.488281 13.011719C14.308594 13.011719 14.988281 12.335938 14.988281 11.511719L14.988281 4.511719C14.988281 3.6875 14.3125 3.011719 13.488281 3.011719 Z M 2.488281 4.011719L13.488281 4.011719C13.769531 4.011719 13.988281 4.230469 13.988281 4.511719L13.988281 11.511719C13.988281 11.792969 13.769531 12.011719 13.488281 12.011719L2.488281 12.011719C2.207031 12.011719 1.988281 11.792969 1.988281 11.511719L1.988281 4.511719C1.988281 4.230469 2.207031 4.011719 2.488281 4.011719 Z M 6 4.992188L6 11.011719L11 8 Z M 7 6.757813L9.0625 8L7 9.242188Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Address Section End -->
 
-          <div class="md:hidden">
+        <!-- Nav Section Start -->
+        <div class="header__sticky">
+          <div
+            class="w-full mx-auto bg-white font-barlowCondensed text-[#151222] font-medium h-16 text-sm md:text-base lg:text-lg tracking-wider px-4 flex items-center justify-between shadow-md z-50"
+          >
+            <div class="flex items-center space-x-2 md:ml-[66px]">
+              <a href="#" class="flex items-center space-x-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                  width="48"
+                  height="48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M50 14C30.129581 14 14 30.129595 14 50C14 69.870405 30.129581 86 50 86C69.870419 86 86 69.870405 86 50C86 30.129595 69.870419 14 50 14 z M 50 16C68.78954 16 84 31.210473 84 50C84 68.789527 68.78954 84 50 84C31.21046 84 16 68.789527 16 50C16 31.210473 31.21046 16 50 16 z M 50 19C32.884791 19 19 32.884791 19 50C19 67.115209 32.884791 81 50 81C67.115209 81 81 67.115209 81 50C81 40.904382 77.079076 32.716819 70.835938 27.046875 A 0.50005 0.50005 0 1 0 70.164062 27.787109C76.206924 33.275165 80 41.191618 80 50C80 66.574791 66.574791 80 50 80C33.425209 80 20 66.574791 20 50C20 33.425209 33.425209 20 50 20C53.630741 20 57.108062 20.645941 60.328125 21.826172 A 0.50018397 0.50018397 0 1 0 60.671875 20.886719C57.343938 19.66695 53.749259 19 50 19 z M 63.480469 22.140625 A 0.50005 0.50005 0 0 0 63.277344 23.091797C63.947092 23.423229 64.604492 23.779343 65.246094 24.158203 A 0.50005 0.50005 0 1 0 65.753906 23.296875C65.091508 22.905735 64.414908 22.53788 63.722656 22.195312 A 0.50005 0.50005 0 0 0 63.480469 22.140625 z M 67.507812 24.511719 A 0.50005 0.50005 0 0 0 67.457031 24.513672 A 0.50005 0.50005 0 0 0 67.212891 25.425781C67.545583 25.65906 67.873213 25.899999 68.195312 26.146484 A 0.50080937 0.50080937 0 1 0 68.804688 25.351562C68.470787 25.096048 68.130417 24.848143 67.787109 24.607422 A 0.50005 0.50005 0 0 0 67.507812 24.511719 z M 45.5 29 A 0.50005 0.50005 0 0 0 45.412109 29.007812 A 0.50005 0.50005 0 0 0 45.410156 29.007812 A 0.50005 0.50005 0 0 0 45.400391 29.009766 A 0.50005 0.50005 0 0 0 45.363281 29.019531 A 0.50005 0.50005 0 0 0 45.341797 29.025391L42.417969 30L42.164062 30C39.41462 30 36.886215 31.506731 35.574219 33.921875L28.060547 47.761719 A 0.50005 0.50005 0 0 0 28.234375 48.423828L32.234375 50.923828 A 0.50005 0.50005 0 0 0 32.910156 50.787109L39 42.087891L39 70.5 A 0.50005 0.50005 0 0 0 39.5 71L49.919922 71 A 0.50005 0.50005 0 0 0 50.082031 71L60.5 71 A 0.50005 0.50005 0 0 0 61 70.5L61 42.087891L67.089844 50.787109 A 0.50005 0.50005 0 0 0 67.765625 50.923828L71.765625 48.423828 A 0.50005 0.50005 0 0 0 71.939453 47.761719L64.425781 33.921875C63.113788 31.505665 60.585251 30 57.835938 30L57.582031 30L54.658203 29.025391 A 0.50005 0.50005 0 0 0 54.511719 29 A 0.50005 0.50005 0 0 0 54.5 29L45.5 29 z M 46.210938 30L53.789062 30L50 40.525391L46.210938 30 z M 45.195312 30.128906L48.916016 40.46875L45 37.263672L45 34.5 A 0.50005 0.50005 0 0 0 44.5 34L43 34L43 30.861328L45.195312 30.128906 z M 54.804688 30.128906L57 30.861328L57 34L55.5 34 A 0.50005 0.50005 0 0 0 55 34.5L55 37.263672L51.083984 40.46875L54.804688 30.128906 z M 42 31.011719L42 34.5 A 0.50005 0.50005 0 0 0 42.5 35L44 35L44 37.5 A 0.50005 0.50005 0 0 0 44.183594 37.886719L49.5 42.236328L49.5 59.5 A 0.50005 0.50005 0 1 0 50.5 59.5L50.5 42.236328L55.816406 37.886719 A 0.50005 0.50005 0 0 0 56 37.5L56 35L57.5 35 A 0.50005 0.50005 0 0 0 58 34.5L58 31.011719C60.319912 31.070577 62.43531 32.351342 63.546875 34.398438L70.835938 47.826172L67.636719 49.824219L60.910156 40.212891 A 0.50005 0.50005 0 0 0 60 40.5L60 70L50.5 70L50.5 67.5 A 0.50005 0.50005 0 0 0 49.992188 66.992188 A 0.50005 0.50005 0 0 0 49.5 67.5L49.5 70L40 70L40 40.5 A 0.50005 0.50005 0 0 0 39.089844 40.212891L32.363281 49.824219L29.164062 47.826172L36.453125 34.398438C37.564688 32.352255 39.680203 31.070618 42 31.011719 z M 49.992188 61.992188 A 0.50005 0.50005 0 0 0 49.5 62.5L49.5 64.5 A 0.50005 0.50005 0 1 0 50.5 64.5L50.5 62.5 A 0.50005 0.50005 0 0 0 49.992188 61.992188 z"
+                    fill="#FF5E14"
+                  />
+                </svg>
+                <span>ABS Garment</span>
+              </a>
+            </div>
+
+            <nav>
+              <ul
+                class="hidden md:flex md:items-center md:justify-center space-x-6 mr-2 md:mr-[66px]"
+              >
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="../../index.html">HOME</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="about.html">ABOUT US</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="service.html">SERVICES</a>
+                </li>
+                <li
+                  class="is-checked hover:text-primary1 transition duration-300"
+                >
+                  <a href="project.html">PROJECTS</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="md:hidden">
+              <button
+                id="menuToggleButton"
+                type="button"
+                class="bg-primary1 p-2 rounded"
+                aria-label="Open Menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="28"
+                >
+                  <path
+                    d="M2 5L2 7L22 7L22 5L2 5 z M 2 11L2 13L22 13L22 11L2 11 z M 2 17L2 19L22 19L22 17L2 17 z"
+                    fill="#FFFFFF"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Nav Section End -->
+
+        <!-- offCanvasMenu start -->
+        <div
+          id="offCanvasMenu"
+          class="off-canvas-menu shadow-md fixed top-0 right-0 w-64 bg-white text-[#151222] font-barlowCondensed font-medium h-screen text-base flex flex-col justify-start md:hidden"
+        >
+          <div class="md:hidden mb-40 pt-3 flex items-end justify-end px-4">
             <button
-              id="menuToggleButton"
+              id="closeMenuButton"
               type="button"
               class="bg-primary1 p-2 rounded"
-              aria-label="Open Menu"
+              aria-label="Close Menu"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+                viewBox="0 0 16 16"
                 width="24"
                 height="28"
               >
                 <path
-                  d="M2 5L2 7L22 7L22 5L2 5 z M 2 11L2 13L22 13L22 11L2 11 z M 2 17L2 19L22 19L22 17L2 17 z"
+                  d="M3.726563 3.023438L3.023438 3.726563L7.292969 8L3.023438 12.269531L3.726563 12.980469L8 8.707031L12.269531 12.980469L12.980469 12.269531L8.707031 8L12.980469 3.726563L12.269531 3.023438L8 7.292969Z"
                   fill="#FFFFFF"
                 />
               </svg>
             </button>
           </div>
+          <nav role="navigation">
+            <ul class="flex items-left justify-center flex-col">
+              <li
+                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="../../index.html" class="px-4">HOME</a>
+              </li>
+              <li
+                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="about.html" class="px-4">ABOUT US</a>
+              </li>
+              <li
+                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="service.html" class="px-4">SERVICES</a>
+              </li>
+              <li
+                class="btn is-checked hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="project.html" class="px-4">PROJECTS</a>
+              </li>
+              <li
+                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="contact.html" class="px-4">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <!-- Nav Section End -->
+        <!-- offCanvasMenu end -->
+      </header>
+      <!-- header area end -->
 
-      <!-- offCanvasMenu start -->
-      <div
-        id="offCanvasMenu"
-        class="off-canvas-menu shadow-md fixed top-0 right-0 w-64 bg-white text-[#151222] font-barlowCondensed font-medium h-screen text-base flex flex-col justify-start md:hidden"
-      >
-        <div class="md:hidden mb-40 pt-3 flex items-end justify-end px-4">
-          <button
-            id="closeMenuButton"
-            type="button"
-            class="bg-primary1 p-2 rounded"
-            aria-label="Close Menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              width="24"
-              height="28"
-            >
-              <path
-                d="M3.726563 3.023438L3.023438 3.726563L7.292969 8L3.023438 12.269531L3.726563 12.980469L8 8.707031L12.269531 12.980469L12.980469 12.269531L8.707031 8L12.980469 3.726563L12.269531 3.023438L8 7.292969Z"
-                fill="#FFFFFF"
-              />
-            </svg>
-          </button>
-        </div>
-        <nav role="navigation">
-          <ul class="flex items-left justify-center flex-col">
-            <li
-              class="hover:text-primary1 transition duration-300 horizontal-separator"
-            >
-              <a href="../../index.html" class="px-4">HOME</a>
-            </li>
-            <li
-              class="hover:text-primary1 transition duration-300 horizontal-separator"
-            >
-              <a href="about.html" class="px-4">ABOUT US</a>
-            </li>
-            <li
-              class="hover:text-primary1 transition duration-300 horizontal-separator"
-            >
-              <a href="service.html" class="px-4">SERVICES</a>
-            </li>
-            <li
-              class="hover:text-primary1 transition duration-300 horizontal-separator"
-            >
-              <a href="project.html" class="px-4">PROJECTS</a>
-            </li>
-            <li
-              class="hover:text-primary1 transition duration-300 horizontal-separator"
-            >
-              <a href="contact.html" class="px-4">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- offCanvasMenu end -->
-    </header>
-    <!-- header area end -->
+      <!-- main wrapper start -->
+      <main>
+        <!-- Page Title start -->
+        <section class="relative">
+          <div class="relative h-72">
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
+            <img
+              src="../assets/images/background/sewing-material.png"
+              class="object-cover w-full h-full z-0"
+              alt=" Close-up of Tailor Sewing on Machine"
+            />
 
-    <!-- main wrapper start -->
-    <main>
-      <!-- Page Title start -->
-      <section class="relative">
-        <div class="relative h-72">
-          <div class="absolute inset-0 bg-black/70 z-10"></div>
-          <img
-            src="../assets/images/background/sewing-material.png"
-            class="object-cover w-full h-full z-0"
-            alt=" Close-up of Tailor Sewing on Machine"
-          />
-
-          <div
-            class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 md:mx-16 z-20 text-white p-4"
-          >
-            <h2
-              class="font-barlowCondensed font-bold text-4xl md:text-5xl capitalize mb-[15px]"
-            >
-              Projects
-            </h2>
             <div
-              class="flex justify-center items-center space-x-3 font-openSans font-light capitalize text-base md:text-base"
+              class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 md:mx-16 z-20 text-white p-4"
             >
-              <p>
-                <a
-                  href="../../index.html"
-                  class="hover:text-primary1 transition duration-300"
-                  ><strong>Home</strong>
-                </a>
-              </p>
-              <span class="text-2xl">/</span>
-              <p>project</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Page Title end -->
-
-      <!-- contact section -->
-      <section>
-        <div class="py-20 md:pt-[90px] md:mx-[66px] px-4 h-96">
-          <p class="text-4xl text-center align-middle">Coming Soon...</p>
-        </div>
-      </section>
-    </main>
-    <!-- main wrapper end -->
-
-    <!-- footer wrapper start -->
-    <footer>
-      <div class="bg-[#020d26] text-white py-20 relative">
-        <div class="md:mx-[66px] px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <div class="mb-[70px] lg:mb-0">
-              <h3
-                class="text-lg md:text-[22px] font-semibold font-barlowCondensed text mb-4 pb-3 uppercase relative underline-style"
+              <h2
+                class="font-barlowCondensed font-bold text-4xl md:text-5xl capitalize mb-[15px]"
               >
-                About us
-              </h3>
-              <p
-                class="mb-[30px] font-openSans text-[#15px] text-[#c2c4c8] mt-[25px]"
+                Projects
+              </h2>
+              <div
+                class="flex justify-center items-center space-x-3 font-openSans font-light capitalize text-base md:text-base"
               >
-                Recognized by customers as an "Excellent Manufacturer" and
-                "Reliable Partner," ABS Garment plc has grown every year since
-                its establishment in 2013 EC.
-              </p>
-              <ul class="flex items-center justify-start gap-6">
-                <li
-                  class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
-                >
-                  <a href="#" class="group" aria-label="Facebook Icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="20"
-                      height="24"
-                      class="fill-white"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"
-                      />
-                    </svg>
+                <p>
+                  <a
+                    href="../../index.html"
+                    class="hover:text-primary1 transition duration-300"
+                    ><strong>Home</strong>
                   </a>
-                </li>
-                <li
-                  class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
-                >
-                  <a href="#" class="group" aria-label="LinkedIn Icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 30 30"
-                      width="20"
-                      height="24"
-                      class="fill-white"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li
-                  class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
-                >
-                  <a href="#" class="group" aria-label="TikTok Icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 48 48"
-                      width="20"
-                      height="24"
-                      class="fill-white"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.5 6C8.4802259 6 6 8.4802259 6 11.5L6 36.5C6 39.519774 8.4802259 42 11.5 42L36.5 42C39.519774 42 42 39.519774 42 36.5L42 11.5C42 8.4802259 39.519774 6 36.5 6L11.5 6 z M 11.5 9L36.5 9C37.898226 9 39 10.101774 39 11.5L39 36.5C39 37.898226 37.898226 39 36.5 39L11.5 39C10.101774 39 9 37.898226 9 36.5L9 11.5C9 10.101774 10.101774 9 11.5 9 z M 26.435547 13.023438 A 1.50015 1.50015 0 0 0 25 14.5L25 28C25 30.227598 23.227598 32 21 32C18.772402 32 17 30.227598 17 28C17 25.772402 18.772402 24 21 24 A 1.50015 1.50015 0 1 0 21 21C17.151598 21 14 24.151598 14 28C14 31.848402 17.151598 35 21 35C24.848402 35 28 31.848402 28 28L28 19.560547C29.122742 20.063907 30.324544 20.328704 31.5 20.341797A1.50015 1.50015 0 1 0 31.5 17.341797C30.584536 17.328486 29.669502 17.100019 28.865234 16.664062C27.645582 15.994031 26.778231 14.875977 26.435547 13.023438 z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li
-                  class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
-                >
-                  <a href="#" class="group" aria-label="INSTAGRAM Icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 26 26"
-                      width="20"
-                      height="24"
-                      class="fill-white"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M7.546875 0C3.390625 0 0 3.390625 0 7.546875L0 18.453125C0 22.609375 3.390625 26 7.546875 26L18.453125 26C22.609375 26 26 22.609375 26 18.453125L26 7.546875C26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2L18.453125 2C21.527344 2 24 4.46875 24 7.546875L24 18.453125C24 21.527344 21.53125 24 18.453125 24L7.546875 24C4.472656 24 2 21.53125 2 18.453125L2 7.546875C2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4C19.671875 4 19 4.671875 19 5.5C19 6.328125 19.671875 7 20.5 7C21.328125 7 22 6.328125 22 5.5C22 4.671875 21.328125 4 20.5 4 Z M 13 6C9.144531 6 6 9.144531 6 13C6 16.855469 9.144531 20 13 20C16.855469 20 20 16.855469 20 13C20 9.144531 16.855469 6 13 6 Z M 13 8C15.773438 8 18 10.226563 18 13C18 15.773438 15.773438 18 13 18C10.226563 18 8 15.773438 8 13C8 10.226563 10.226563 8 13 8Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="relative md:flex justify-center">
-              <div class="mb-[70px] lg:mb-0">
-                <div class="">
-                  <h3
-                    class="text-lg lg:text-[22px] font-semibold font-barlowCondensed text mb-4 pb-3 uppercase relative underline-style"
-                  >
-                    Important Links
-                  </h3>
-                  <ul
-                    class="space-y-[15px] border-l border-[#c2c4c8] pl-4 mt-[25px]"
-                  >
-                    <li
-                      class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
-                    >
-                      <a
-                        href="about.html"
-                        class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
-                        >About us</a
-                      >
-                    </li>
-                    <li
-                      class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
-                    >
-                      <a
-                        href="service.html"
-                        class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
-                        >Our services</a
-                      >
-                    </li>
-                    <li
-                      class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
-                    >
-                      <a
-                        href="project.html"
-                        class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
-                        >PROJECTS</a
-                      >
-                    </li>
-                    <li
-                      class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
-                    >
-                      <a
-                        href="contact.html"
-                        class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                </p>
+                <span class="text-2xl">/</span>
+                <p>project</p>
               </div>
             </div>
-            <div class="">
+          </div>
+        </section>
+        <!-- Page Title end -->
+
+        <!-- product section start -->
+        <section
+          class="pt-[70px] lg:pt-[100px] pb-[40px] lg:pb-[70px] px-4 md:px-[66px] bg-[#f7f9fa]"
+          id="portfolio"
+        >
+          <!-- Filter portfolio start -->
+          <div class="isotope--filter">
+            <div
+              class="button-group filters-button-group flex justify-center flex-wrap gap-[30px] mb-[50px]"
+            >
+              <button
+                class="button btn is-checked font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
+                data-filter="*"
+              >
+                All
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
+                data-filter=".t-shirt"
+              >
+                T-shirt
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium 1 dark:hover:text-accent1 transition duration-300"
+                data-filter=".sweatshirt"
+              >
+                Sweatshirts
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
+                data-filter=".kids-clothing"
+              >
+                Kids Clothing
+              </button>
+            </div>
+
+            <div class="gallery flex flex-wrap justify-center w-full">
+              <!-- single product start 1 -->
+              <div
+                class="item t-shirt relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/t-shirt-1.png"
+                  alt="Basic Black and White T-shirts"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/t-shirt-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 1 -->
+
+              <!-- single product start 2 -->
+              <div
+                class="item kids-clothing relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/kids-1.png"
+                  alt="Stylish clothes for boy near ball of thread"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/kids-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 2 -->
+
+              <!-- single product start 3 -->
+              <div
+                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/t-shirt-2.png"
+                  alt="White folded male t shirt on dark background"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/t-shirt-2.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 3 -->
+
+              <!-- single product start 4 -->
+              <div
+                class="item sweatshirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/sweatshirt-1.png"
+                  alt="Folded Clothes on Brown Wooden Bench"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/sweatshirt-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 4 -->
+
+              <!-- single product start 5 -->
+              <div
+                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/t-shirt-3.png"
+                  alt=""
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/t-shirt-3.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 5 -->
+
+              <!-- single product start 6 -->
+              <div
+                class="item kids-clothing relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="images/product/kids-2.png"
+                  alt="Stylish cotton wear for kid on gray background"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="images/product/kids-2.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 6 -->
+            </div>
+            <!-- Filter portfolio end -->
+          </div>
+        </section>
+        <!-- product section end -->
+      </main>
+      <!-- main wrapper end -->
+
+      <!-- footer wrapper start -->
+      <footer>
+        <div class="bg-[#020d26] text-white py-20 relative">
+          <div class="md:mx-[66px] px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div class="mb-[70px] lg:mb-0">
                 <h3
                   class="text-lg md:text-[22px] font-semibold font-barlowCondensed text mb-4 pb-3 uppercase relative underline-style"
                 >
-                  Address Location
+                  About us
                 </h3>
-                <ul
-                  class="space-y-[15px] mb-[30px] font-openSans text-[#15px] text-[#c2c4c8] mt-[25px]"
+                <p
+                  class="mb-[30px] font-openSans text-[#15px] text-[#c2c4c8] mt-[25px]"
                 >
-                  <li>
-                    Ethiopia Addis Ababa, bole Sub-city Woreda 00, House-no:
-                    0000
+                  Recognized by customers as an "Excellent Manufacturer" and
+                  "Reliable Partner," ABS Garment plc has grown every year since
+                  its establishment in 2013 EC.
+                </p>
+                <ul class="flex items-center justify-start gap-6">
+                  <li
+                    class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
+                  >
+                    <a href="#" class="group" aria-label="Facebook Icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="24"
+                        class="fill-white"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"
+                        />
+                      </svg>
+                    </a>
                   </li>
-                  <li><strong>Phone:</strong> +251 911 111 111</li>
-                  <li>
-                    <strong>Office Time:</strong> Mon - Sat 8:30 am to 5:30 pm
+                  <li
+                    class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
+                  >
+                    <a href="#" class="group" aria-label="LinkedIn Icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="20"
+                        height="24"
+                        class="fill-white"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
+                        />
+                      </svg>
+                    </a>
                   </li>
-                  <li><strong>Email:</strong> example@demo.com</li>
+                  <li
+                    class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
+                  >
+                    <a href="#" class="group" aria-label="TikTok Icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 48"
+                        width="20"
+                        height="24"
+                        class="fill-white"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.5 6C8.4802259 6 6 8.4802259 6 11.5L6 36.5C6 39.519774 8.4802259 42 11.5 42L36.5 42C39.519774 42 42 39.519774 42 36.5L42 11.5C42 8.4802259 39.519774 6 36.5 6L11.5 6 z M 11.5 9L36.5 9C37.898226 9 39 10.101774 39 11.5L39 36.5C39 37.898226 37.898226 39 36.5 39L11.5 39C10.101774 39 9 37.898226 9 36.5L9 11.5C9 10.101774 10.101774 9 11.5 9 z M 26.435547 13.023438 A 1.50015 1.50015 0 0 0 25 14.5L25 28C25 30.227598 23.227598 32 21 32C18.772402 32 17 30.227598 17 28C17 25.772402 18.772402 24 21 24 A 1.50015 1.50015 0 1 0 21 21C17.151598 21 14 24.151598 14 28C14 31.848402 17.151598 35 21 35C24.848402 35 28 31.848402 28 28L28 19.560547C29.122742 20.063907 30.324544 20.328704 31.5 20.341797A1.50015 1.50015 0 1 0 31.5 17.341797C30.584536 17.328486 29.669502 17.100019 28.865234 16.664062C27.645582 15.994031 26.778231 14.875977 26.435547 13.023438 z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li
+                    class="flex items-center justify-center w-[35px] h-[35px] border-[1px] border-solid border-[#c2c4c8] bg-transparent rounded-[3px] p-1 hover:bg-primary1 hover:border-primary1 transition duration-300"
+                  >
+                    <a href="#" class="group" aria-label="INSTAGRAM Icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 26 26"
+                        width="20"
+                        height="24"
+                        class="fill-white"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M7.546875 0C3.390625 0 0 3.390625 0 7.546875L0 18.453125C0 22.609375 3.390625 26 7.546875 26L18.453125 26C22.609375 26 26 22.609375 26 18.453125L26 7.546875C26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2L18.453125 2C21.527344 2 24 4.46875 24 7.546875L24 18.453125C24 21.527344 21.53125 24 18.453125 24L7.546875 24C4.472656 24 2 21.53125 2 18.453125L2 7.546875C2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4C19.671875 4 19 4.671875 19 5.5C19 6.328125 19.671875 7 20.5 7C21.328125 7 22 6.328125 22 5.5C22 4.671875 21.328125 4 20.5 4 Z M 13 6C9.144531 6 6 9.144531 6 13C6 16.855469 9.144531 20 13 20C16.855469 20 20 16.855469 20 13C20 9.144531 16.855469 6 13 6 Z M 13 8C15.773438 8 18 10.226563 18 13C18 15.773438 15.773438 18 13 18C10.226563 18 8 15.773438 8 13C8 10.226563 10.226563 8 13 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
+              </div>
+              <div class="relative md:flex justify-center">
+                <div class="mb-[70px] lg:mb-0">
+                  <div class="">
+                    <h3
+                      class="text-lg lg:text-[22px] font-semibold font-barlowCondensed text mb-4 pb-3 uppercase relative underline-style"
+                    >
+                      Important Links
+                    </h3>
+                    <ul
+                      class="space-y-[15px] border-l border-[#c2c4c8] pl-4 mt-[25px]"
+                    >
+                      <li
+                        class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
+                      >
+                        <a
+                          href="about.html"
+                          class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
+                          >About us</a
+                        >
+                      </li>
+                      <li
+                        class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
+                      >
+                        <a
+                          href="service.html"
+                          class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
+                          >Our services</a
+                        >
+                      </li>
+                      <li
+                        class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
+                      >
+                        <a
+                          href="project.html"
+                          class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
+                          >PROJECTS</a
+                        >
+                      </li>
+                      <li
+                        class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
+                      >
+                        <a
+                          href="contact.html"
+                          class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="mb-[70px] lg:mb-0">
+                  <h3
+                    class="text-lg md:text-[22px] font-semibold font-barlowCondensed text mb-4 pb-3 uppercase relative underline-style"
+                  >
+                    Address Location
+                  </h3>
+                  <ul
+                    class="space-y-[15px] mb-[30px] font-openSans text-[#15px] text-[#c2c4c8] mt-[25px]"
+                  >
+                    <li>
+                      Ethiopia Addis Ababa, bole Sub-city Woreda 00, House-no:
+                      0000
+                    </li>
+                    <li><strong>Phone:</strong> +251 911 111 111</li>
+                    <li>
+                      <strong>Office Time:</strong> Mon - Sat 8:30 am to 5:30 pm
+                    </li>
+                    <li><strong>Email:</strong> example@demo.com</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="bg-[#020d26] text-white pb-4">
-        <div class="md:mx-[66px] px-4">
-          <div class="border-t border-gray-700 pt-4">
-            <p class="text-sm text-center">
-              &copy; 2024 Yohannes-Te. All rights reserved.
-            </p>
+        <div class="bg-[#020d26] text-white pb-4">
+          <div class="md:mx-[66px] px-4">
+            <div class="border-t border-gray-700 pt-4">
+              <p class="text-sm text-center">
+                &copy; 2024 Yohannes-Te. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- footer wrapper end -->
+      </footer>
+      <!-- footer wrapper end -->
 
-    <!-- Back to top start -->
-    <button
-      id="scroll__top"
-      class="hidden fixed bottom-10 right-5 z-50 bg-primary1 text-white shadow-[0_1px_1px_1px_rgba(0,0,0,0.16)] cursor-pointer invisible opacity-0 translate-y-12 transition-all duration-300 leading-[1] w-11 h-11 rounded-full border-none sm:flex items-center justify-center hover:bg-[#242323]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="ionicon w-6 leading-[1]"
-        viewBox="0 0 512 512"
+      <!-- Back to top start -->
+      <button
+        id="scroll__top"
+        class="hidden fixed bottom-10 right-5 z-50 bg-primary1 text-white shadow-[0_1px_1px_1px_rgba(0,0,0,0.16)] cursor-pointer invisible opacity-0 translate-y-12 transition-all duration-300 leading-[1] w-11 h-11 rounded-full border-none sm:flex items-center justify-center hover:bg-[#242323]"
       >
-        <path
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-width="48"
-          d="M112 244l144-144 144 144M256 120v292"
-        />
-      </svg>
-    </button>
-    <!-- Back to top end -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon w-6 leading-[1]"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="48"
+            d="M112 244l144-144 144 144M256 120v292"
+          />
+        </svg>
+      </button>
+      <!-- Back to top end -->
+    </div>
   </body>
 </html>
