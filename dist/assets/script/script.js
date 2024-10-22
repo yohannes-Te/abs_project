@@ -137,6 +137,8 @@ const lightbox = GLightbox({
   loop: true,
 });
 
+// form submittion
+
 // Back to top
 const scrollTop = document.getElementById("scroll__top");
 
