@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/logo/favicon.ico"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,14 +19,23 @@
 
     <title>ABS Garment plc</title>
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
+    <!-- glightbox css -->
+    <link rel="stylesheet" href="./../assets/css/glightbox.min.css" />
 
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="./../assets/css/styles.css" />
     <!-- swiper js -->
-    <script src="../assets/script/swiper-bundle.min.js" defer></script>
+    <script src="./../assets/script/swiper-bundle.min.js" defer></script>
+
+    <!-- isotope js  -->
+    <script src="./../assets/script/isotope.pkgd.min.js" defer></script>
+
+    <!-- glightbox js -->
+    <script src="./../assets/script/glightbox.min.js" defer></script>
+
     <!-- custom script -->
-    <script src="../assets/script/script.js" defer></script>
+    <script src="./../assets/script/script.js" defer></script>
   </head>
   <body>
     <div id="body-overlay" class="overlay">
@@ -179,7 +194,7 @@
             class="w-full mx-auto bg-white font-barlowCondensed text-[#151222] font-medium h-16 text-sm md:text-base lg:text-lg tracking-wider px-4 flex items-center justify-between shadow-md z-50"
           >
             <div class="flex items-center space-x-2 md:ml-[66px]">
-              <a href="about.html" class="flex items-center space-x-1">
+              <a href="./project.html" class="flex items-center space-x-1">
                 <img
                   src="../assets/images/logo/logo.png"
                   alt="company logo"
@@ -194,21 +209,21 @@
                 class="hidden md:flex md:items-center md:justify-center space-x-6 mr-2 md:mr-[66px]"
               >
                 <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="../../public/index.html">HOME</a>
+                  <a href="./../index.html">HOME</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="./about.html">ABOUT US</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="./service.html">SERVICES</a>
                 </li>
                 <li
-                  class="is-checked btn hover:text-primary1 transition duration-300"
+                  class="is-checked hover:text-primary1 transition duration-300"
                 >
-                  <a href="about.html">ABOUT US</a>
+                  <a href="./project.html">PRODUCTS</a>
                 </li>
                 <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="service.html">SERVICES</a>
-                </li>
-                <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="project.html">PRODUCTS</a>
-                </li>
-                <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="contact.html">CONTACT</a>
+                  <a href="./contact.html">CONTACT</a>
                 </li>
               </ul>
             </nav>
@@ -262,32 +277,32 @@
               </svg>
             </button>
           </div>
-          <nav>
+          <nav role="navigation">
             <ul class="flex items-left justify-center flex-col">
               <li
                 class="btn hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="../../index.html" class="px-4 block">HOME</a>
-              </li>
-              <li
-                class="is-checked btn hover:text-primary1 transition duration-300 horizontal-separator"
-              >
-                <a href="about.html" class="px-4 block">ABOUT US</a>
+                <a href="./../index.html" class="px-4 block">HOME</a>
               </li>
               <li
                 class="btn hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="service.html" class="px-4 block">SERVICES</a>
+                <a href="./about.html" class="px-4 block">ABOUT US</a>
               </li>
               <li
                 class="btn hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="project.html" class="px-4 block">PRODUCTS</a>
+                <a href="./service.html" class="px-4 block">SERVICES</a>
+              </li>
+              <li
+                class="btn is-checked hover:text-primary1 transition duration-300 horizontal-separator"
+              >
+                <a href="./project.html" class="px-4 block">PRODUCTS</a>
               </li>
               <li
                 class="btn hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="contact.html" class="px-4 block">CONTACT</a>
+                <a href="./contact.html" class="px-4 block">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -303,7 +318,7 @@
           <div class="relative h-72">
             <div class="absolute inset-0 bg-black/70 z-10"></div>
             <img
-              src="../assets/images/background/sewing-material.png"
+              src="./../assets/images/background/sewing-material.png"
               class="object-cover w-full h-full z-0"
               alt=" Close-up of Tailor Sewing on Machine"
             />
@@ -314,125 +329,187 @@
               <h2
                 class="font-barlowCondensed font-bold text-4xl md:text-5xl capitalize mb-[15px]"
               >
-                About us
+                Products
               </h2>
               <div
                 class="flex justify-center items-center space-x-3 font-openSans font-light capitalize text-base md:text-base"
               >
                 <p>
                   <a
-                    href="../../index.html"
+                    href="./../index.html"
                     class="hover:text-primary1 transition duration-300"
                     ><strong>Home</strong>
                   </a>
                 </p>
                 <span class="text-2xl">/</span>
-                <p>About us</p>
+                <p>project</p>
               </div>
             </div>
           </div>
         </section>
         <!-- Page Title end -->
 
-        <!-- story section start -->
-        <section>
-          <div
-            class="md:mx-[66px] px-4 py-14 lg:py-20 grid sm:grid-cols-1 md:grid-cols-2 gap-10"
-          >
-            <div class="flex flex-col justify-between">
-              <div
-                class="text-left font-barlowCondensed text-[#151222] text-3xl md:text-4xl lg:text-5xl font-medium mt-2 pb-5"
-              >
-                <p>Our Story</p>
-                <h2 class="font-light">Welcome to our website.</h2>
-              </div>
-              <div
-                class="font-openSans text-[15px] md:text-base text-[#687187]"
-              >
-                <p class="mb-4">
-                  ABS Garment is a new and upcoming garment company trying to
-                  claim their Market share in the vast market of Addis Ababa’s
-                  with young and motivated workers.
-                </p>
-                <p class="mb-4">
-                  Recognized by customers as an "Excellent Manufacturer" and
-                  "Reliable Partner," ABS Garment plc has grown every year since
-                  its establishment in 2013 EC, becoming the workplace of more
-                  than 35+ employees
-                </p>
-              </div>
-
-              <div
-                class="text-[#333333] font-openSans p-6 mt-[35px] mb-5 mx-10 bg-primary1/5"
-              >
-                <blockquote>
-                  we help to make your world better.
-                  <span class="pt-[15px] block">Sincerely yours.</span>
-                  <span class="pt-4 font-semibold"
-                    >Abriham ( CEO of ABS Garment )</span
-                  >
-                </blockquote>
-              </div>
-            </div>
-            <div class="hidden md:flex justify-end">
-              <img
-                src="../assets/images/ceo/ceo-img.png"
-                alt="ABS Garment plc ceo picture"
-              />
-            </div>
-          </div>
-        </section>
-
-        <!-- mission & vision -->
-        <section>
-          <div class="px-4 md:px-[66px] pb-14 lg:pb-20 bg-[#f7f9fa] relative">
+        <!-- product section start -->
+        <section
+          class="pt-[70px] lg:pt-[100px] pb-[40px] lg:pb-[70px] px-4 md:px-[66px] bg-[#f7f9fa]"
+          id="portfolio"
+        >
+          <!-- Filter portfolio start -->
+          <div class="isotope--filter">
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-20"
+              class="button-group filters-button-group flex justify-center flex-wrap gap-[30px] mb-[50px]"
             >
-              <div class="bg-white px-8 py-10 shadow-md">
-                <h3
-                  class="text-primary1 text-xl md:text-2xl font-barlowCondensed font-medium mb-3"
-                >
-                  Our Mission
-                </h3>
-                <p
-                  class="text-[#687187] text-sm md:text-[15px] font-openSans leading-relaxed relative after:absolute after:content-[''] after:h-[1px] after:w-28 after:bottom-[3px] after:left-0 after:transition-[.5s] after:bg-primary1/30 pb-[26px] hover:after:w-full"
-                >
-                  We commit to inspiring our people to be the best they can be,
-                  empowering them to design a world that prioritizes the human
-                  experience.
-                </p>
-              </div>
-              <div class="bg-white px-8 py-10 shadow-md">
-                <h3
-                  class="text-primary1 text-xl md:text-2xl font-barlowCondensed font-medium mb-3"
-                >
-                  Our Vision
-                </h3>
-                <p
-                  class="text-[#687187] text-sm md:text-[15px] font-openSans leading-relaxed relative after:absolute after:content-[''] after:h-[1px] after:w-28 after:bottom-[3px] after:left-0 after:transition-[.5s] after:bg-primary1/30 pb-[26px] hover:after:w-full"
-                >
-                  We confidently accept our role as trusted expert partner to
-                  our clients, guiding them to business success.
-                </p>
-              </div>
-              <div class="bg-white px-8 py-10 shadow-md">
-                <h3
-                  class="text-primary1 text-xl md:text-2xl font-barlowCondensed font-medium mb-3"
-                >
-                  Our Strategies
-                </h3>
-                <p
-                  class="text-[#687187] text-sm md:text-[15px] font-openSans leading-relaxed relative after:absolute after:content-[''] after:h-[1px] after:w-28 after:bottom-[3px] after:left-0 after:transition-[.5s] after:bg-primary1/30 pb-[26px] hover:after:w-full"
-                >
-                  We challenge ourselves to continue to earn our position as
-                  industry leaders in hospitality, multi-family residential, and
-                  affordable apparel Products.
-                </p>
-              </div>
+              <button
+                class="button btn is-checked font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
+                data-filter="*"
+              >
+                All
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
+                data-filter=".t-shirt"
+              >
+                T-shirt
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium 1 dark:hover:text-accent1 transition duration-300"
+                data-filter=".sweatshirt"
+              >
+                Sweatshirts
+              </button>
+              <button
+                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
+                data-filter=".kids-clothing"
+              >
+                Kids Clothing
+              </button>
             </div>
+
+            <div class="gallery flex flex-wrap justify-center w-full">
+              <!-- single product start 1 -->
+              <div
+                class="item t-shirt relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/t-shirt-1.png"
+                  alt="Basic Black and White T-shirts"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/t-shirt-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 1 -->
+
+              <!-- single product start 2 -->
+              <div
+                class="item kids-clothing relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/kids-1.png"
+                  alt="Stylish clothes for boy near ball of thread"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/kids-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 2 -->
+
+              <!-- single product start 3 -->
+              <div
+                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/t-shirt-2.png"
+                  alt="White folded male t shirt on dark background"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/t-shirt-2.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 3 -->
+
+              <!-- single product start 4 -->
+              <div
+                class="item sweatshirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/sweatshirt-1.png"
+                  alt="Folded Clothes on Brown Wooden Bench"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/sweatshirt-1.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 4 -->
+
+              <!-- single product start 5 -->
+              <div
+                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/t-shirt-3.png"
+                  alt=""
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/t-shirt-3.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 5 -->
+
+              <!-- single product start 6 -->
+              <div
+                class="item kids-clothing relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
+              >
+                <img
+                  src="./../assets/images/product/kids-2.png"
+                  alt="Stylish cotton wear for kid on gray background"
+                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
+                />
+                <div class="overlay group-hover:opacity-100">
+                  <a
+                    href="./../assets/images/product/kids-2.png"
+                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
+                    data-gallery="gallery1"
+                    >VIEW MORE</a
+                  >
+                </div>
+              </div>
+              <!-- single product end 6 -->
+            </div>
+            <!-- Filter portfolio end -->
           </div>
         </section>
+        <!-- product section end -->
       </main>
       <!-- main wrapper end -->
 
@@ -564,7 +641,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="about.html"
+                          href="./about.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >About us</a
                         >
@@ -573,7 +650,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="service.html"
+                          href="./service.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >Our services</a
                         >
@@ -582,7 +659,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="project.html"
+                          href="./project.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >PRODUCTS</a
                         >
@@ -591,7 +668,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="contact.html"
+                          href="./contact.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >Contact</a
                         >

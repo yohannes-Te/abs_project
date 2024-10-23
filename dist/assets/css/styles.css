@@ -1266,16 +1266,6 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
 .fill-\[\#151222\] {
   fill: #151222;
 }

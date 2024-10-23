@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/logo/favicon.ico"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,23 +19,14 @@
 
     <title>ABS Garment plc</title>
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
-    <!-- glightbox css -->
-    <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="./../assets/css/swiper-bundle.min.css" />
 
-    <!-- tailwindcss -->
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./../assets/css/styles.css" />
     <!-- swiper js -->
-    <script src="../assets/script/swiper-bundle.min.js" defer></script>
-
-    <!-- isotope js  -->
-    <script src="script/isotope.pkgd.min.js" defer></script>
-
-    <!-- glightbox js -->
-    <script src="../assets/script/glightbox.min.js" defer></script>
-
+    <script src="./../assets/script/swiper-bundle.min.js" defer></script>
     <!-- custom script -->
-    <script src="../assets/script/script.js" defer></script>
+    <script src="./../assets/script/script.js" defer></script>
   </head>
   <body>
     <div id="body-overlay" class="overlay">
@@ -94,7 +91,6 @@
               <span>Mon - Sat 8:30 am to 5:30 pm</span>
             </li>
           </ul>
-
           <ul class="flex items-center mr-[66px]">
             <li
               class="flex items-center justify-center separator separator-before"
@@ -188,7 +184,7 @@
             class="w-full mx-auto bg-white font-barlowCondensed text-[#151222] font-medium h-16 text-sm md:text-base lg:text-lg tracking-wider px-4 flex items-center justify-between shadow-md z-50"
           >
             <div class="flex items-center space-x-2 md:ml-[66px]">
-              <a href="project.html" class="flex items-center space-x-1">
+              <a href="./service.html" class="flex items-center space-x-1">
                 <img
                   src="../assets/images/logo/logo.png"
                   alt="company logo"
@@ -203,21 +199,21 @@
                 class="hidden md:flex md:items-center md:justify-center space-x-6 mr-2 md:mr-[66px]"
               >
                 <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="../../public/index.html">HOME</a>
+                  <a href="./../index.html">HOME</a>
                 </li>
                 <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="about.html">ABOUT US</a>
-                </li>
-                <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="service.html">SERVICES</a>
+                  <a href="./about.html">ABOUT US</a>
                 </li>
                 <li
-                  class="is-checked hover:text-primary1 transition duration-300"
+                  class="btn is-checked hover:text-primary1 transition duration-300"
                 >
-                  <a href="project.html">PRODUCTS</a>
+                  <a href="./service.html">SERVICES</a>
                 </li>
                 <li class="btn hover:text-primary1 transition duration-300">
-                  <a href="contact.html">CONTACT</a>
+                  <a href="./project.html">PRODUCTS</a>
+                </li>
+                <li class="btn hover:text-primary1 transition duration-300">
+                  <a href="./contact.html">CONTACT</a>
                 </li>
               </ul>
             </nav>
@@ -274,34 +270,29 @@
           <nav role="navigation">
             <ul class="flex items-left justify-center flex-col">
               <li
-                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+                class="hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a
-                  href="../../public/index.html
-                "
-                  class="px-4 block"
-                  >HOME</a
-                >
+                <a href="./../index.html" class="px-4 block">HOME</a>
               </li>
               <li
-                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+                class="hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="about.html" class="px-4 block">ABOUT US</a>
+                <a href="./about.html" class="px-4 block">ABOUT US</a>
               </li>
               <li
-                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+                class="hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="service.html" class="px-4 block">SERVICES</a>
+                <a href="./service.html" class="px-4 block">SERVICES</a>
               </li>
               <li
-                class="btn is-checked hover:text-primary1 transition duration-300 horizontal-separator"
+                class="hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="project.html" class="px-4 block">PRODUCTS</a>
+                <a href="./project.html" class="px-4 block">PRODUCTS</a>
               </li>
               <li
-                class="btn hover:text-primary1 transition duration-300 horizontal-separator"
+                class="hover:text-primary1 transition duration-300 horizontal-separator"
               >
-                <a href="contact.html" class="px-4 block">CONTACT</a>
+                <a href="./contact.html" class="px-4 block">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -328,187 +319,247 @@
               <h2
                 class="font-barlowCondensed font-bold text-4xl md:text-5xl capitalize mb-[15px]"
               >
-                Products
+                services
               </h2>
               <div
                 class="flex justify-center items-center space-x-3 font-openSans font-light capitalize text-base md:text-base"
               >
                 <p>
                   <a
-                    href="../../index.html"
+                    href="./../index.html"
                     class="hover:text-primary1 transition duration-300"
                     ><strong>Home</strong>
                   </a>
                 </p>
                 <span class="text-2xl">/</span>
-                <p>project</p>
+                <p>services</p>
               </div>
             </div>
           </div>
         </section>
         <!-- Page Title end -->
 
-        <!-- product section start -->
-        <section
-          class="pt-[70px] lg:pt-[100px] pb-[40px] lg:pb-[70px] px-4 md:px-[66px] bg-[#f7f9fa]"
-          id="portfolio"
-        >
-          <!-- Filter portfolio start -->
-          <div class="isotope--filter">
-            <div
-              class="button-group filters-button-group flex justify-center flex-wrap gap-[30px] mb-[50px]"
-            >
-              <button
-                class="button btn is-checked font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
-                data-filter="*"
+        <!-- service -->
+        <section class="relative">
+          <div class="py-20 md:pt-[90px] md:mx-[66px] px-4 overflow-hidden">
+            <div style="--swiper-pagination-color: #000" class="bg-white">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5"
               >
-                All
-              </button>
-              <button
-                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
-                data-filter=".t-shirt"
-              >
-                T-shirt
-              </button>
-              <button
-                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium 1 dark:hover:text-accent1 transition duration-300"
-                data-filter=".sweatshirt"
-              >
-                Sweatshirts
-              </button>
-              <button
-                class="button btn hover:text-primary1 font-openSans text-[18px] capitalize font-medium dark:hover:text-accent1 transition duration-300"
-                data-filter=".kids-clothing"
-              >
-                Kids Clothing
-              </button>
+                <div
+                  class="px-5 py-9 grid grid-cols-2 justify-center space-x-2 outline-2 outline-[#878068]/35 outline-dashed"
+                >
+                  <div class="flex justify-center items-center rounded-full">
+                    <img
+                      src="../assets/images/service/sweatshirt.png "
+                      alt="Person in White Sweatshirt
+                    "
+                      class="rounded-full hover:rotate-[15deg] transition duration-500"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="text-2xl font-barlowCondensed font-medium mb-3 capitalize"
+                    >
+                      SweatShirts
+                    </h3>
+                    <p
+                      class="text-[#687187] text-sm md:text-base leading-6 font-openSans"
+                    >
+                      We offer a perfect blend of comfort and style, designed
+                      with premium fabric for long-lasting wear.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="px-5 py-9 grid grid-cols-2 justify-center space-x-2 outline-2 outline-[#878068]/35 outline-dashed"
+                >
+                  <div class="flex justify-center items-center rounded-full">
+                    <img
+                      src="../assets/images/service/kids-clothe.png"
+                      alt="kids clothes on a drawer"
+                      class="rounded-full hover:rotate-[15deg] transition duration-500"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="text-2xl font-barlowCondensed font-medium mb-3 capitalize"
+                    >
+                      kids Clothing
+                    </h3>
+                    <p
+                      class="text-[#687187] text-sm md:text-base leading-6 font-openSans"
+                    >
+                      Vibrant and durable kids' clothing, crafted to keep up
+                      with active play and endless adventures.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="px-5 py-9 grid grid-cols-2 justify-center space-x-2 outline-2 outline-[#878068]/35 outline-dashed"
+                >
+                  <div class="flex justify-center items-center rounded-full">
+                    <img
+                      src="../assets/images/service/t-shirt.png"
+                      alt="different Shirts on Hangers"
+                      class="rounded-full hover:rotate-[15deg] transition duration-500"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="text-2xl font-barlowCondensed font-medium mb-3 capitalize"
+                    >
+                      T-shirts
+                    </h3>
+                    <p
+                      class="text-[#687187] text-sm md:text-base leading-6 font-openSans"
+                    >
+                      T-shirts designed for both comfort and versatility, made
+                      with quality fabrics that feel great and fit perfectly.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="px-5 py-9 grid grid-cols-2 justify-center space-x-2 outline-2 outline-[#878068]/35 outline-dashed"
+                >
+                  <div class="flex justify-center items-center rounded-full">
+                    <img
+                      src="../assets/images/service/custom-design.png"
+                      alt="cutting a peice of fibaric at workbench"
+                      class="rounded-full hover:rotate-[15deg] transition duration-500"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="text-2xl font-barlowCondensed font-medium mb-3 capitalize"
+                    >
+                      custom work
+                    </h3>
+                    <p
+                      class="text-[#687187] text-sm md:text-base leading-6 font-openSans"
+                    >
+                      Specializing in custom apparel, tailored to meet specific
+                      needs, from unique designs to personalized fit and style.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <div class="gallery flex flex-wrap justify-center w-full">
-              <!-- single product start 1 -->
-              <div
-                class="item t-shirt relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/t-shirt-1.png"
-                  alt="Basic Black and White T-shirts"
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/t-shirt-1.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 1 -->
-
-              <!-- single product start 2 -->
-              <div
-                class="item kids-clothing relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/kids-1.png"
-                  alt="Stylish clothes for boy near ball of thread"
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/kids-1.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 2 -->
-
-              <!-- single product start 3 -->
-              <div
-                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/t-shirt-2.png"
-                  alt="White folded male t shirt on dark background"
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/t-shirt-2.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 3 -->
-
-              <!-- single product start 4 -->
-              <div
-                class="item sweatshirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/sweatshirt-1.png"
-                  alt="Folded Clothes on Brown Wooden Bench"
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/sweatshirt-1.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 4 -->
-
-              <!-- single product start 5 -->
-              <div
-                class="item t-shirt relative m-2 w-full md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/t-shirt-3.png"
-                  alt=""
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/t-shirt-3.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 5 -->
-
-              <!-- single product start 6 -->
-              <div
-                class="item kids-clothing relative w-full m-2 md:w-[calc(33.33%-24px)] sm:w-[calc(50%-24px)] overflow-hidden cursor-pointer group"
-              >
-                <img
-                  src="images/product/kids-2.png"
-                  alt="Stylish cotton wear for kid on gray background"
-                  class="w-full h-full object-cover block transition duration-300 group-hover:scale-105"
-                />
-                <div class="overlay group-hover:opacity-100">
-                  <a
-                    href="images/product/kids-2.png"
-                    class="glightbox inline-block justify-center py-2 px-4 border-2 border-solid border-white text-white text-sm transition duration-300 hover:bg-white hover:text-[#121c3d]"
-                    data-gallery="gallery1"
-                    >VIEW MORE</a
-                  >
-                </div>
-              </div>
-              <!-- single product end 6 -->
-            </div>
-            <!-- Filter portfolio end -->
           </div>
         </section>
-        <!-- product section end -->
+
+        <!-- benefits -->
+        <section class="bg-[#f7f9fa]">
+          <div
+            class="md:mx-[66px] px-4 py-14 lg:py-20 grid sm:grid-cols-1 md:grid-cols-2 gap-10"
+          >
+            <div class="flex flex-col">
+              <div
+                class="text-left font-barlowCondensed text-[#151222] text-3xl md:text-4xl lg:text-5xl font-medium mt-2 pb-8"
+              >
+                <p>Our Benefits</p>
+                <h2 class="font-light">Why You Should Choose us?</h2>
+              </div>
+              <div
+                class="font-openSans text-[15px] md:text-base text-[#687187]"
+              >
+                <p class="mb-12 pb-8">
+                  We offer a variety of clothing solutions to meet your needs.
+                  From urgent orders to top-quality garments, our services are
+                  both reliable and reasonably priced. Our experienced tailors
+                  ensure every piece is crafted with care and precision, giving
+                  you the perfect fit and style every time. Choose us for a
+                  seamless and satisfying clothing experience.
+                </p>
+
+                <ul class="text-sm space-y-3">
+                  <li class="space-x-1 flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 80 80"
+                      width="20"
+                      height="24"
+                      aria-label="Right Arrow"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M48 15.585938L48 32L8 32L8 48L48 48L48 64.414063L72.414063 40 Z M 50 20.414063L69.585938 40L50 59.585938L50 46L10 46L10 34L50 34 Z M 53 27C52.449219 27 52 27.449219 52 28C52 28.550781 52.449219 29 53 29C53.550781 29 54 28.550781 54 28C54 27.449219 53.550781 27 53 27 Z M 56 30C55.449219 30 55 30.449219 55 31C55 31.550781 55.449219 32 56 32C56.550781 32 57 31.550781 57 31C57 30.449219 56.550781 30 56 30 Z M 59 33C58.449219 33 58 33.449219 58 34C58 34.550781 58.449219 35 59 35C59.550781 35 60 34.550781 60 34C60 33.449219 59.550781 33 59 33 Z M 13 36C12.449219 36 12 36.449219 12 37C12 37.550781 12.449219 38 13 38C13.550781 38 14 37.550781 14 37C14 36.449219 13.550781 36 13 36 Z M 17 36C16.449219 36 16 36.449219 16 37C16 37.550781 16.449219 38 17 38C17.550781 38 18 37.550781 18 37C18 36.449219 17.550781 36 17 36 Z M 21 36C20.449219 36 20 36.449219 20 37C20 37.550781 20.449219 38 21 38C21.550781 38 22 37.550781 22 37C22 36.449219 21.550781 36 21 36 Z M 25 36C24.449219 36 24 36.449219 24 37C24 37.550781 24.449219 38 25 38C25.550781 38 26 37.550781 26 37C26 36.449219 25.550781 36 25 36 Z M 29 36C28.449219 36 28 36.449219 28 37C28 37.550781 28.449219 38 29 38C29.550781 38 30 37.550781 30 37C30 36.449219 29.550781 36 29 36 Z M 33 36C32.449219 36 32 36.449219 32 37C32 37.550781 32.449219 38 33 38C33.550781 38 34 37.550781 34 37C34 36.449219 33.550781 36 33 36 Z M 37 36C36.449219 36 36 36.449219 36 37C36 37.550781 36.449219 38 37 38C37.550781 38 38 37.550781 38 37C38 36.449219 37.550781 36 37 36 Z M 41 36C40.449219 36 40 36.449219 40 37C40 37.550781 40.449219 38 41 38C41.550781 38 42 37.550781 42 37C42 36.449219 41.550781 36 41 36 Z M 45 36C44.449219 36 44 36.449219 44 37C44 37.550781 44.449219 38 45 38C45.550781 38 46 37.550781 46 37C46 36.449219 45.550781 36 45 36 Z M 49 36C48.449219 36 48 36.449219 48 37C48 37.550781 48.449219 38 49 38C49.550781 38 50 37.550781 50 37C50 36.449219 49.550781 36 49 36 Z M 62 36C61.449219 36 61 36.449219 61 37C61 37.550781 61.449219 38 62 38C62.550781 38 63 37.550781 63 37C63 36.449219 62.550781 36 62 36 Z M 65 39C64.449219 39 64 39.449219 64 40C64 40.550781 64.449219 41 65 41C65.550781 41 66 40.550781 66 40C66 39.449219 65.550781 39 65 39Z"
+                        fill="#FF7913"
+                      />
+                    </svg>
+                    <strong> Urgent orders:</strong> Quick solutions for when
+                    you need your clothes in a hurry.
+                  </li>
+                  <li class="space-x-1 flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 80 80"
+                      width="20"
+                      height="24"
+                      aria-label="Right Arrow"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M48 15.585938L48 32L8 32L8 48L48 48L48 64.414063L72.414063 40 Z M 50 20.414063L69.585938 40L50 59.585938L50 46L10 46L10 34L50 34 Z M 53 27C52.449219 27 52 27.449219 52 28C52 28.550781 52.449219 29 53 29C53.550781 29 54 28.550781 54 28C54 27.449219 53.550781 27 53 27 Z M 56 30C55.449219 30 55 30.449219 55 31C55 31.550781 55.449219 32 56 32C56.550781 32 57 31.550781 57 31C57 30.449219 56.550781 30 56 30 Z M 59 33C58.449219 33 58 33.449219 58 34C58 34.550781 58.449219 35 59 35C59.550781 35 60 34.550781 60 34C60 33.449219 59.550781 33 59 33 Z M 13 36C12.449219 36 12 36.449219 12 37C12 37.550781 12.449219 38 13 38C13.550781 38 14 37.550781 14 37C14 36.449219 13.550781 36 13 36 Z M 17 36C16.449219 36 16 36.449219 16 37C16 37.550781 16.449219 38 17 38C17.550781 38 18 37.550781 18 37C18 36.449219 17.550781 36 17 36 Z M 21 36C20.449219 36 20 36.449219 20 37C20 37.550781 20.449219 38 21 38C21.550781 38 22 37.550781 22 37C22 36.449219 21.550781 36 21 36 Z M 25 36C24.449219 36 24 36.449219 24 37C24 37.550781 24.449219 38 25 38C25.550781 38 26 37.550781 26 37C26 36.449219 25.550781 36 25 36 Z M 29 36C28.449219 36 28 36.449219 28 37C28 37.550781 28.449219 38 29 38C29.550781 38 30 37.550781 30 37C30 36.449219 29.550781 36 29 36 Z M 33 36C32.449219 36 32 36.449219 32 37C32 37.550781 32.449219 38 33 38C33.550781 38 34 37.550781 34 37C34 36.449219 33.550781 36 33 36 Z M 37 36C36.449219 36 36 36.449219 36 37C36 37.550781 36.449219 38 37 38C37.550781 38 38 37.550781 38 37C38 36.449219 37.550781 36 37 36 Z M 41 36C40.449219 36 40 36.449219 40 37C40 37.550781 40.449219 38 41 38C41.550781 38 42 37.550781 42 37C42 36.449219 41.550781 36 41 36 Z M 45 36C44.449219 36 44 36.449219 44 37C44 37.550781 44.449219 38 45 38C45.550781 38 46 37.550781 46 37C46 36.449219 45.550781 36 45 36 Z M 49 36C48.449219 36 48 36.449219 48 37C48 37.550781 48.449219 38 49 38C49.550781 38 50 37.550781 50 37C50 36.449219 49.550781 36 49 36 Z M 62 36C61.449219 36 61 36.449219 61 37C61 37.550781 61.449219 38 62 38C62.550781 38 63 37.550781 63 37C63 36.449219 62.550781 36 62 36 Z M 65 39C64.449219 39 64 39.449219 64 40C64 40.550781 64.449219 41 65 41C65.550781 41 66 40.550781 66 40C66 39.449219 65.550781 39 65 39Z"
+                        fill="#FF7913"
+                      />
+                    </svg>
+                    <strong>Top-quality garments:</strong> We use the finest
+                    materials to ensure superior quality.
+                  </li>
+                  <li class="space-x-1 flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 80 80"
+                      width="20"
+                      height="24"
+                      aria-label="Right Arrow"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M48 15.585938L48 32L8 32L8 48L48 48L48 64.414063L72.414063 40 Z M 50 20.414063L69.585938 40L50 59.585938L50 46L10 46L10 34L50 34 Z M 53 27C52.449219 27 52 27.449219 52 28C52 28.550781 52.449219 29 53 29C53.550781 29 54 28.550781 54 28C54 27.449219 53.550781 27 53 27 Z M 56 30C55.449219 30 55 30.449219 55 31C55 31.550781 55.449219 32 56 32C56.550781 32 57 31.550781 57 31C57 30.449219 56.550781 30 56 30 Z M 59 33C58.449219 33 58 33.449219 58 34C58 34.550781 58.449219 35 59 35C59.550781 35 60 34.550781 60 34C60 33.449219 59.550781 33 59 33 Z M 13 36C12.449219 36 12 36.449219 12 37C12 37.550781 12.449219 38 13 38C13.550781 38 14 37.550781 14 37C14 36.449219 13.550781 36 13 36 Z M 17 36C16.449219 36 16 36.449219 16 37C16 37.550781 16.449219 38 17 38C17.550781 38 18 37.550781 18 37C18 36.449219 17.550781 36 17 36 Z M 21 36C20.449219 36 20 36.449219 20 37C20 37.550781 20.449219 38 21 38C21.550781 38 22 37.550781 22 37C22 36.449219 21.550781 36 21 36 Z M 25 36C24.449219 36 24 36.449219 24 37C24 37.550781 24.449219 38 25 38C25.550781 38 26 37.550781 26 37C26 36.449219 25.550781 36 25 36 Z M 29 36C28.449219 36 28 36.449219 28 37C28 37.550781 28.449219 38 29 38C29.550781 38 30 37.550781 30 37C30 36.449219 29.550781 36 29 36 Z M 33 36C32.449219 36 32 36.449219 32 37C32 37.550781 32.449219 38 33 38C33.550781 38 34 37.550781 34 37C34 36.449219 33.550781 36 33 36 Z M 37 36C36.449219 36 36 36.449219 36 37C36 37.550781 36.449219 38 37 38C37.550781 38 38 37.550781 38 37C38 36.449219 37.550781 36 37 36 Z M 41 36C40.449219 36 40 36.449219 40 37C40 37.550781 40.449219 38 41 38C41.550781 38 42 37.550781 42 37C42 36.449219 41.550781 36 41 36 Z M 45 36C44.449219 36 44 36.449219 44 37C44 37.550781 44.449219 38 45 38C45.550781 38 46 37.550781 46 37C46 36.449219 45.550781 36 45 36 Z M 49 36C48.449219 36 48 36.449219 48 37C48 37.550781 48.449219 38 49 38C49.550781 38 50 37.550781 50 37C50 36.449219 49.550781 36 49 36 Z M 62 36C61.449219 36 61 36.449219 61 37C61 37.550781 61.449219 38 62 38C62.550781 38 63 37.550781 63 37C63 36.449219 62.550781 36 62 36 Z M 65 39C64.449219 39 64 39.449219 64 40C64 40.550781 64.449219 41 65 41C65.550781 41 66 40.550781 66 40C66 39.449219 65.550781 39 65 39Z"
+                        fill="#FF7913"
+                      />
+                    </svg>
+                    <strong>Reasonable prices:</strong> Get premium clothing
+                    without breaking the bank.
+                  </li>
+                  <li class="space-x-1 flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 80 80"
+                      width="20"
+                      height="24"
+                      aria-label="Right Arrow"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M48 15.585938L48 32L8 32L8 48L48 48L48 64.414063L72.414063 40 Z M 50 20.414063L69.585938 40L50 59.585938L50 46L10 46L10 34L50 34 Z M 53 27C52.449219 27 52 27.449219 52 28C52 28.550781 52.449219 29 53 29C53.550781 29 54 28.550781 54 28C54 27.449219 53.550781 27 53 27 Z M 56 30C55.449219 30 55 30.449219 55 31C55 31.550781 55.449219 32 56 32C56.550781 32 57 31.550781 57 31C57 30.449219 56.550781 30 56 30 Z M 59 33C58.449219 33 58 33.449219 58 34C58 34.550781 58.449219 35 59 35C59.550781 35 60 34.550781 60 34C60 33.449219 59.550781 33 59 33 Z M 13 36C12.449219 36 12 36.449219 12 37C12 37.550781 12.449219 38 13 38C13.550781 38 14 37.550781 14 37C14 36.449219 13.550781 36 13 36 Z M 17 36C16.449219 36 16 36.449219 16 37C16 37.550781 16.449219 38 17 38C17.550781 38 18 37.550781 18 37C18 36.449219 17.550781 36 17 36 Z M 21 36C20.449219 36 20 36.449219 20 37C20 37.550781 20.449219 38 21 38C21.550781 38 22 37.550781 22 37C22 36.449219 21.550781 36 21 36 Z M 25 36C24.449219 36 24 36.449219 24 37C24 37.550781 24.449219 38 25 38C25.550781 38 26 37.550781 26 37C26 36.449219 25.550781 36 25 36 Z M 29 36C28.449219 36 28 36.449219 28 37C28 37.550781 28.449219 38 29 38C29.550781 38 30 37.550781 30 37C30 36.449219 29.550781 36 29 36 Z M 33 36C32.449219 36 32 36.449219 32 37C32 37.550781 32.449219 38 33 38C33.550781 38 34 37.550781 34 37C34 36.449219 33.550781 36 33 36 Z M 37 36C36.449219 36 36 36.449219 36 37C36 37.550781 36.449219 38 37 38C37.550781 38 38 37.550781 38 37C38 36.449219 37.550781 36 37 36 Z M 41 36C40.449219 36 40 36.449219 40 37C40 37.550781 40.449219 38 41 38C41.550781 38 42 37.550781 42 37C42 36.449219 41.550781 36 41 36 Z M 45 36C44.449219 36 44 36.449219 44 37C44 37.550781 44.449219 38 45 38C45.550781 38 46 37.550781 46 37C46 36.449219 45.550781 36 45 36 Z M 49 36C48.449219 36 48 36.449219 48 37C48 37.550781 48.449219 38 49 38C49.550781 38 50 37.550781 50 37C50 36.449219 49.550781 36 49 36 Z M 62 36C61.449219 36 61 36.449219 61 37C61 37.550781 61.449219 38 62 38C62.550781 38 63 37.550781 63 37C63 36.449219 62.550781 36 62 36 Z M 65 39C64.449219 39 64 39.449219 64 40C64 40.550781 64.449219 41 65 41C65.550781 41 66 40.550781 66 40C66 39.449219 65.550781 39 65 39Z"
+                        fill="#FF7913"
+                      />
+                    </svg>
+                    <strong>Experienced tailors:</strong> Skilled professionals
+                    dedicated to perfecting your fit and style.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden md:flex justify-end">
+              <img
+                src="../assets/images/service/black-Wearing-woman.png"
+                alt="Photo Of Woman Wearing Black Tank Top"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <!-- main wrapper end -->
 
@@ -640,7 +691,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="about.html"
+                          href="./about.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >About us</a
                         >
@@ -649,7 +700,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="service.html"
+                          href="./service.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >Our services</a
                         >
@@ -658,7 +709,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="project.html"
+                          href="./project.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >PRODUCTS</a
                         >
@@ -667,7 +718,7 @@
                         class="relative before:absolute before::content-[''] before:bg-[#c2c4c8] before:w-[10px] before:h-[1px] before:left-[-16px] before:top-1/2"
                       >
                         <a
-                          href="contact.html"
+                          href="./contact.html"
                           class="font-openSans text-sm text-[#eaeaea] hover:text-primary1 transition duration-300"
                           >Contact</a
                         >
